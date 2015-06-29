@@ -9,7 +9,8 @@
     "jadejs/jade": "1.1.5",
     "yields/empty": "0.0.1",
     "yields/serialize": "0.2.0",
-    "slifszyc/query": "0.0.3"
+    "slifszyc/query": "0.0.3",
+    "tj/node-querystring": "0.6.6"
   },
   "locals": [
     "admin-sidebar",

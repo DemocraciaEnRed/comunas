@@ -11,7 +11,8 @@
         p
           textarea(name='text', rows='4', validate='required max-length:4096', tabindex=1)
           ul.form-messages
-        input.btn.form-submit.pull-right(type='submit', tabindex=2, value=t('comments.send'))
+        input#btn-infavor.btn.form-submit.pull-right(type='submit', tabindex=2, value='In favor')
+        input#btn-against.btn.form-submit.pull-right(type='submit', tabindex=3, value='Against')
         a(href='#', tabindex=3).btn.btn-link.cancel-new-comment.pull-right=t('common.cancel')
         ul.form-messages
       button.btn.btn-block.new-comment.hide

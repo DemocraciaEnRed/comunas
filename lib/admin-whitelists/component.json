@@ -13,7 +13,8 @@
     "render",
     "request",
     "view",
-    "whitelists"
+    "whitelists",
+    "citizen"
   ],
   "scripts": [
     "admin-whitelist.js",

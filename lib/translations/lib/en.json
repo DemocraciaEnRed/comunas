@@ -106,6 +106,8 @@
   "comments.best": "Best arguments",
   "comments.best.infavor": "In favor",
   "comments.best.against": "Against",
+  "comments.best.nonexistent.infavor": "There are no arguments in favor",
+  "comments.best.nonexistent.against": "There are no arguments against",
   "comments.cannot-be-empty": "Argument cannot be empty",
   "comments.cannot-remove": "Comment has replies, cannot be removed!",
   "comments.deleted-arguments": "Deleted arguments",

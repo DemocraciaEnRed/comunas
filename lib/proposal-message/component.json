@@ -1,0 +1,26 @@
+{
+  "name": "proposal-message",
+  "description": "proposal message form",
+  "dependencies": {
+    "component/dom": "1.0.6",
+    "component/bus": "^0.0.2",
+    "component/t": "1.0.0",
+    "yields/serialize": "0.2.0"
+  },
+  "locals": [
+    "citizen",
+    "request",
+    "render",
+    "view",
+    "debug",
+    "config",
+    "form-view"
+  ],
+  "scripts": [ "proposal-message.js" ],
+  "templates": [
+    "template.jade"
+  ],
+  "styles": [ "styles.styl" ],
+  "images": [ ],
+  "main": "proposal-message.js"
+}

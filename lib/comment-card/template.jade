@@ -8,8 +8,11 @@ li.media.comment-item(class=classes)
     img(src=avatar).avatar
 
   .media-body
-    h5.media-heading
+    h5.media-heading(class=comment.author.official ? 'official' : '')
       | #{comment.author.fullName}
+      - if (comment.author.official)
+        span.badge
+          span.glyphicon.glyphicon-ok
       small.ago(data-time=comment.createdAt.toString())
       - if (comment.editedAt)
         small.edited · #{t('comments.edited')}

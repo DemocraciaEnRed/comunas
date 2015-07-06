@@ -12,6 +12,7 @@
   "signupUrl": "",
   "settingsUrl": "",
   "staff": [],
+  "officialUser": "",
   "allowEmailAliases": true,
   "facebookSignin": false,
   "auth": {

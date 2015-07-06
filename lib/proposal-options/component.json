@@ -15,7 +15,8 @@
     "render",
     "view",
     "debug",
-    "config"
+    "config",
+    "proposal-message"
   ],
   "scripts": [ "proposal-options.js" ],
   "templates": [

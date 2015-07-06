@@ -1,11 +1,8 @@
 #message
   - if (law.closed)
-    - if (law.closeMessage)
       h4=t('proposal.final-message.title')
-      p=law.closeMessage
-    - else if (citizen.official)
-      h4=t('proposal.final-message.title')
-      form.message-form(method='post', action='/api/law/#{law.id}/message', autovalidate='autovalidate', autosubmit='autosubmit')
+      p.static(class=law.closeMessage ? '' : 'hide')=law.closeMessage
+      form.message-form(class=!law.closeMessage && citizen.official ? '' : 'hide',method='post', action='/api/law/#{law.id}/message', autovalidate='autovalidate', autosubmit='autosubmit')
         p
           =t('proposal.final-message.explanation')
           textarea(name='message', rows=4)

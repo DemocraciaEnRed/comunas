@@ -1,6 +1,7 @@
 #message
   - if (law.closed)
       h4=t('proposal.final-message.title')
+        a.edit.btn.btn-link.pull-right(href='#', class=law.closeMessage && citizen.official ? '' : 'hide')=t('proposal.final-message.edit')
       p.static(class=law.closeMessage ? '' : 'hide')=law.closeMessage
       form.message-form(class=!law.closeMessage && citizen.official ? '' : 'hide', method='post', action='/api/law/#{law.id}/message', autovalidate='autovalidate', autosubmit='autosubmit')
         p
@@ -8,4 +9,5 @@
           textarea(name='message', rows=4, validate='required max-length:4096')
         .actions
           input.btn.btn-primary.pull-right(type='submit', value=t('proposal.final-message.submit'))
+          a.btn.btn-link.cancel.hide.pull-right=t('proposal.final-message.cancel')
         ul.form-messages

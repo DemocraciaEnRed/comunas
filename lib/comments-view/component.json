@@ -13,10 +13,11 @@
     "comments-filter",
     "form-view",
     "request",
-    "debug"
+    "debug",
+    "render"
   ],
   "scripts": [ "view.js" ],
   "styles": [ "styles.styl", "comments.styl" ],
-  "templates": [ "template.jade" ],
+  "templates": [ "template.jade", "best-comment-card.jade" ],
   "main": "view.js"
 }

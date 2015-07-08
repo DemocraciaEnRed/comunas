@@ -41,6 +41,12 @@
           a(href=proposal.authorUrl, target='_blank')=proposal.author
         - else
           =proposal.author
+    - else if (proposal.creator)
+      .creator-card
+        img(src=proposal.creator.avatar, style='border-radius=100%')
+        p
+          =t('admin-laws-form.label.author') + ': '
+          span(style='font-weight:bold')=proposal.creator.fullName
     h3=proposal.title
     .entry-content
       .summary

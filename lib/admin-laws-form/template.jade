@@ -26,14 +26,15 @@
           label.col-sm-2.control-label= t('admin-laws-form.label.lawId')
           .col-sm-10
             input.form-control(type='text', id="lawId", name='lawId', tabindex=3, placeholder=t('admin-laws-form.label.lawId'), value=law.lawId)
-        .form-group
-          label.col-sm-2.control-label= t('admin-laws-form.label.author')
-          .col-sm-10
-            input.form-control(type='text', id="lawAuthor", name='lawAuthor', tabindex=4, placeholder='John Doe', value=law.author, validate='author')
-        .form-group
-          label.col-sm-2.control-label= t('admin-laws-form.label.author') + ' URL'
-          .col-sm-10
-            input.form-control(type='text', id="authorUrl", name='authorUrl', tabindex=5, placeholder='http://en.wikipedia.org/wiki/John_Doe', value=law.authorUrl, validate='url')
+        - if (showAuthor)
+          .form-group
+            label.col-sm-2.control-label= t('admin-laws-form.label.author')
+            .col-sm-10
+              input.form-control(type='text', id="lawAuthor", name='lawAuthor', tabindex=4, placeholder='John Doe', value=law.author, validate='author')
+          .form-group
+            label.col-sm-2.control-label= t('admin-laws-form.label.author') + ' URL'
+            .col-sm-10
+              input.form-control(type='text', id="authorUrl", name='authorUrl', tabindex=5, placeholder='http://en.wikipedia.org/wiki/John_Doe', value=law.authorUrl, validate='url')
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.votable')
           .col-sm-10.votable-toggle

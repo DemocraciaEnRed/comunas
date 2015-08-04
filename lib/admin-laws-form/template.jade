@@ -22,11 +22,11 @@
             select.form-control(name='tag', tabindex=2, validate='required')
               - each tag in tags
                 option(selected= law.tag ? tag.hash === law.tag.hash : false, value=tag.hash)= tag.name
-        .form-group
-          label.col-sm-2.control-label= t('admin-laws-form.label.lawId')
-          .col-sm-10
-            input.form-control(type='text', id="lawId", name='lawId', tabindex=3, placeholder=t('admin-laws-form.label.lawId'), value=law.lawId)
-        - if (showAuthor)
+        - if (expanded)
+          .form-group
+            label.col-sm-2.control-label= t('admin-laws-form.label.lawId')
+            .col-sm-10
+              input.form-control(type='text', id="lawId", name='lawId', tabindex=3, placeholder=t('admin-laws-form.label.lawId'), value=law.lawId)
           .form-group
             label.col-sm-2.control-label= t('admin-laws-form.label.author')
             .col-sm-10
@@ -73,13 +73,15 @@
               a.add-clause.btn.btn-info.btn-xs(href='#')= t('admin-laws-form.button.add-clause')
           span.add-clause-forbidden.hide=t('admin-laws-form.message.add-clause-forbidden')
         .form-group
-          label.col-sm-2.control-label=t('admin-laws-form.label.resources')
-          .law-links.col-sm-10
-            - if (law.links && law.links.length)
-              - each link, id in law.links
-                include link
+          - if (expanded)
+            label.col-sm-2.control-label=t('admin-laws-form.label.resources')
+            .law-links.col-sm-10
+              - if (law.links && law.links.length)
+                - each link, id in law.links
+                  include link
           .col-sm-2.pull-right
-            a.add-link.btn.btn-block.btn-info(href='#')= t('admin-laws-form.button.add-link')
+            - if (expanded)
+              a.add-link.btn.btn-block.btn-info(href='#')= t('admin-laws-form.button.add-link')
             .form-group: input.btn.btn-success.btn-block.btn-lg.hide(type='submit', tabindex=12, value=t('admin-laws-form.button.submit'))
           span.add-link-forbidden.hide=t('admin-laws-form.message.add-link-forbidden')
     .col-md-2.commands

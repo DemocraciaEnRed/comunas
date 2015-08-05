@@ -1,5 +1,6 @@
 {
   "locale": "en",
+  "enforceLocale": false,
   "protocol": "http",
   "host": "localhost",
   "publicPort": 3000,

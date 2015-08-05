@@ -14,6 +14,7 @@
         ul.form-messages
         .form-group
           label.control-label= t('admin-laws-form.label.mediaTitle')
+          p.help-text= t('admin-laws-form.label.mediaTitle.help')
           input.form-control(type='text', id="mediaTitle", name='mediaTitle', tabindex=1, placeholder=t('admin-laws-form.label.mediaTitle'), value=law.mediaTitle, validate='required')
         .form-group
           label.control-label= t('admin-laws-form.label.tag')
@@ -41,10 +42,12 @@
           label.control-label= t('admin-laws-form.label.source')
           input.form-control(type='url', name='source', tabindex=6, placeholder=t('admin-laws-form.placeholder.source'), value=law.source, validate='url')
         .form-group
-          label.control-label= t('admin-laws-form.label.summary')
+          label.control-label= t('admin-laws-form.label.textMain')
+          p.help-text= t('admin-laws-form.label.textMain.help')
           textarea.form-control(name='textMain', tabindex=7)= law.textMain
         .form-group
-          label.control-label= t('admin-laws-form.label.summary')
+          label.control-label= t('admin-laws-form.label.textSecondary')
+          p.help-text= t('admin-laws-form.label.textSecondary.help')
           textarea.form-control(name='textSecondary', tabindex=7)= law.textSecondary
         .form-group.closingAt
           label.control-label= t('admin-laws-form.label.closingAt')

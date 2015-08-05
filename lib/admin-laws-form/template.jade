@@ -49,7 +49,11 @@
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.summary')
           .col-sm-10
-            textarea.form-control(name='summary', tabindex=7)= law.summary
+            textarea.form-control(name='textMain', tabindex=7)= law.textMain
+        .form-group
+          label.col-sm-2.control-label= t('admin-laws-form.label.summary')
+          .col-sm-10
+            textarea.form-control(name='textSecondary', tabindex=7)= law.textSecondary
         .form-group.closingAt
           label.col-sm-2.control-label= t('admin-laws-form.label.closingAt')
           - var closingAt = ''

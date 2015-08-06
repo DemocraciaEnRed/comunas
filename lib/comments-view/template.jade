@@ -1,6 +1,10 @@
 - var logged = citizen.logged()
 
 .comments
+  .inner-container.best-comments.well
+    h4=t('comments.best')
+    #best-container
+
   - if (logged)
     .inner-container.my-comments
       h4=t('comments.your.arguments')
@@ -21,10 +25,6 @@
       button.btn.btn-block.new-comment.hide
         i.icon-plus
         =t('comments.new.argument')
-
-  .inner-container.best-comments
-    h4=t('comments.best')
-    #best-container
 
   .inner-container.all-comments
     h4=t('comments.arguments')

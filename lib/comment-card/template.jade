@@ -11,7 +11,10 @@ li.media.comment-item(class=classes)
     h5.media-heading(class=comment.author.official ? 'official' : '')
       | #{comment.author.fullName}
       - if (comment.author.official)
-        span.badge
+        span.badge.badge-official
+          span.glyphicon.glyphicon-ok
+      - if (comment.author.organization)
+        span.badge.badge-organization
           span.glyphicon.glyphicon-ok
       small.ago(data-time=comment.createdAt.toString())
       - if (comment.editedAt)

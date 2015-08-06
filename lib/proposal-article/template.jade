@@ -47,6 +47,13 @@
         p
           =t('admin-laws-form.label.author') + ': '
           span(style='font-weight:bold')=proposal.creator.fullName
+          - if (proposal.creator.official)
+            span.badge.badge-official
+              span.glyphicon.glyphicon-ok
+          - if (proposal.creator.organization)
+            span.badge.badge-organization
+              span.glyphicon.glyphicon-ok
+
     h3=proposal.title
     .entry-content
       .summary

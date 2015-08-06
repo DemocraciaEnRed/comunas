@@ -16,6 +16,7 @@ li.media.comment-item(class=classes)
       - if (comment.author.organization)
         span.badge.badge-organization
           span.glyphicon.glyphicon-ok
+      span.kind.text-center(class=comment.kind)=t('comments.' + comment.kind)
       small.ago(data-time=comment.createdAt.toString())
       - if (comment.editedAt)
         small.edited · #{t('comments.edited')}

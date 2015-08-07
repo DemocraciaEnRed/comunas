@@ -12,7 +12,8 @@
     "citizen",
     "proposal-clauses",
     "render",
-    "view"
+    "view",
+    "is-mobile"
   ],
   "scripts": [ "proposal-article.js" ],
   "templates": [ "template.jade", "paragraph.jade" ],

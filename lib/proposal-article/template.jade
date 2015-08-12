@@ -48,10 +48,10 @@
           =t('admin-laws-form.label.author') + ': '
           span(style='font-weight:bold')=proposal.creator.fullName
           - if (proposal.creator.official)
-            span.badge.badge-official
+            span.badge.badge-official(title=t('badge.official'))
               span.glyphicon.glyphicon-ok
           - if (proposal.creator.organization)
-            span.badge.badge-organization
+            span.badge.badge-organization(title=t('badge.organization'))
               span.glyphicon.glyphicon-eye-open
 
     h3=proposal.title

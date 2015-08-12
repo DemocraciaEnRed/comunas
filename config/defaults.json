@@ -14,7 +14,7 @@
   "settingsUrl": "",
   "staff": [],
   "officialUser": "",
-  "organizationUser": "",
+  "organizationUser": [],
   "allowEmailAliases": true,
   "facebookSignin": false,
   "auth": {

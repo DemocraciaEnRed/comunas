@@ -69,6 +69,9 @@ html(lang='en')
         window.config=!{JSON.stringify(client)}
         window.config.locale='#{locale}'
         window.translations=!{JSON.stringify(translations)}
+      - if (config.fullStoryTrackingId)
+        include includes/fullstory
+
       script(src='/app.js')
 
       //- Boot application

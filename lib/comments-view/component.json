@@ -4,7 +4,8 @@
   "dependencies": {
     "component/dom": "1.0.6",
     "component/t": "1.0.0",
-    "slifszyc/loading-lock": "0867923281013c00b503c4bc866e103fd5024105"
+    "slifszyc/loading-lock": "0867923281013c00b503c4bc866e103fd5024105",
+    "component/tip": "2.1.2"
   },
   "locals": [
     "citizen",

@@ -11,11 +11,11 @@ li.media.comment-item(class=classes)
     h5.media-heading(class=comment.author.official ? 'official' : '')
       | #{comment.author.fullName}
       - if (comment.author.official)
-        span.badge.badge-official
+        span.badge.badge-official(title=t('badge.official'))
           span.glyphicon.glyphicon-ok
       - if (comment.author.organization)
-        span.badge.badge-organization
-          span.glyphicon.glyphicon-ok
+        span.badge.badge-organization(title=t('badge.organization'))
+          span.glyphicon.glyphicon-eye-open
       span.kind.text-center(class=comment.kind)=t('comments.' + comment.kind)
       small.ago(data-time=comment.createdAt.toString())
       - if (comment.editedAt)

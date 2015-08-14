@@ -4,7 +4,8 @@
   "dependencies": {
     "component/truncate": "72b55",
     "component/dom": "1.0.6",
-    "yields/wrap": "0.0.1"
+    "yields/wrap": "0.0.1",
+    "component/tip": "2.1.2"
   },
   "locals": [
     "config",

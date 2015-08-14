@@ -71,6 +71,8 @@ html(lang='en')
         window.translations=!{JSON.stringify(translations)}
       - if (config.fullStoryTrackingId)
         include includes/fullstory
+      - if (config.hotJarTrackingId)
+        include includes/hotjar
 
       script(src='/app.js')
 

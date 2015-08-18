@@ -44,11 +44,11 @@
         .form-group
           label.control-label= t('admin-laws-form.label.textMain')
           p.help-text= t('admin-laws-form.label.textMain.help')
-          textarea.form-control(name='textMain', tabindex=7)= law.textMain
+          textarea.form-control(name='textMain', tabindex=7, validate='max-length-html:' + config.mainTextMax)= law.textMain
         .form-group
           label.control-label= t('admin-laws-form.label.textSecondary')
           p.help-text= t('admin-laws-form.label.textSecondary.help')
-          textarea.form-control(name='textSecondary', tabindex=7)= law.textSecondary
+          textarea.form-control(name='textSecondary', validate='max-length-html:' + config.secondaryTextMax)= law.textSecondary
         .form-group.closingAt
           label.control-label= t('admin-laws-form.label.closingAt')
           - var closingAt = ''

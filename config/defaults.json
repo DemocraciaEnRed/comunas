@@ -52,6 +52,7 @@
     "learnMoreUrl",
     "googleAnalyticsTrackingId",
     "fullStoryTrackingId",
+    "hotJarTrackingId",
     "commentsPerPage",
     "frequentlyAskedQuestions",
     "termsOfService",
@@ -66,7 +67,9 @@
     "headerBackgroundColor",
     "headerFontColor",
     "facebookSignin",
-    "visibility"
+    "visibility",
+    "mainTextMax",
+    "secondaryTextMax"
   ],
   "socialshare": {
     "siteName": "DemocracyOS",
@@ -85,6 +88,7 @@
   "learnMoreUrl": "",
   "googleAnalyticsTrackingId": "",
   "fullStoryTrackingId": "",
+  "hotJarTrackingId": 0,
   "rssEnabled": true,
   "commentsPerPage": 0,
   "spamLimit": 5,
@@ -100,5 +104,7 @@
   "googleAPIKey": "",
   "visibility": "visible",
   "usersWhitelist": false,
-  "alwaysShowTopicResults": false
+  "alwaysShowTopicResults": false,
+  "mainTextMax": 300,
+  "secondaryTextMax": 500
 }

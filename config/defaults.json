@@ -69,7 +69,8 @@
     "facebookSignin",
     "visibility",
     "mainTextMax",
-    "secondaryTextMax"
+    "secondaryTextMax",
+    "spamLimit"
   ],
   "socialshare": {
     "siteName": "DemocracyOS",

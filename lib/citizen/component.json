@@ -11,7 +11,8 @@
     "request",
     "stateful",
     "debug",
-    "config"
+    "config",
+    "fullstory"
   ],
   "scripts": [ "citizen.js", "model.js" ],
   "templates": [ ],

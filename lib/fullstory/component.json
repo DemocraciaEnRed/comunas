@@ -1,0 +1,12 @@
+{
+  "name": "fullstory",
+  "description": "FullStory script wrapper",
+  "dependencies": {
+    "visionmedia/debug": "2.1.3"
+  },
+  "locals": [
+    "config"
+  ],
+  "scripts": [ "fullstory.js" ],
+  "main": "fullstory.js"
+}

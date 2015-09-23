@@ -49,7 +49,7 @@
           label.control-label= t('admin-laws-form.label.textSecondary')
           p.help-text= t('admin-laws-form.label.textSecondary.help')
           textarea.form-control(name='textSecondary', validate='max-length-html:' + config.secondaryTextMax)= law.textSecondary
-        .form-group.closingAt
+        .form-group.closingAt(class= citizen.staff ? '' : 'hide')
           label.control-label= t('admin-laws-form.label.closingAt')
           - var closingAt = ''
           - var closingAtTime = ''

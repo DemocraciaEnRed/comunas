@@ -107,5 +107,6 @@
   "usersWhitelist": false,
   "alwaysShowTopicResults": false,
   "mainTextMax": 300,
-  "secondaryTextMax": 500
+  "secondaryTextMax": 500,
+  "lawOpenDays": 20
 }

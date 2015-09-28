@@ -4,6 +4,7 @@
       h4=t('proposal.final-message.title')
         a.edit.btn.btn-link.pull-right(href='#', class=law.closeMessage && citizen.official ? '' : 'hide')=t('proposal.final-message.edit')
       p.static(class=law.closeMessage ? '' : 'hide')=law.closeMessage
+      p: strong= '- ' + config.closeMessageSignature
       form.message-form(class=!law.closeMessage && citizen.official ? '' : 'hide', method='post', action='/api/law/#{law.id}/message', autovalidate='autovalidate', autosubmit='autosubmit')
         p
           =t('proposal.final-message.explanation')

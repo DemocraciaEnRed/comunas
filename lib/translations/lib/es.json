@@ -28,7 +28,7 @@
   "admin-laws-form.label.closingAt": "Fecha de cierre",
   "admin-laws-form.label.lawId": "Identificación oficial",
   "admin-laws-form.label.mediaTitle": "Título",
-  "admin-laws-form.label.mediaTitle.help": "Tratá que el titulo describa lo esencial de tu idea y sea fácil de entender",
+  "admin-laws-form.label.mediaTitle.help": "Un título que explique el tema en pocas palabras.",
   "admin-laws-form.label.resources": "Recursos",
   "admin-laws-form.label.source": "Fuente",
   "admin-laws-form.label.textMain": "Idea central",

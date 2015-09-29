@@ -24,7 +24,8 @@
     "regexps",
     "richtext",
     "toggle",
-    "debug"
+    "debug",
+    "keywords"
   ],
   "templates": [
     "template.jade",

@@ -23,8 +23,7 @@
     "render",
     "stateful-view",
     "view",
-    "debug",
-    "tags-input"
+    "debug"
   ],
   "scripts": [ "main.js", "sidebar.js", "filter.js", "list.js" ],
   "templates": [ "sidebar-container.jade", "list-item.jade", "filter-item.jade", "filter-container.jade", "list-container.jade", "check.jade", "empty-list-item.jade" ],

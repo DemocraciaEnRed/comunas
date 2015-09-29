@@ -28,7 +28,8 @@
     "title",
     "render",
     "debug",
-    "config"
+    "config",
+    "keywords"
   ],
   "scripts": [ "admin.js" ],
   "styles": [ "admin.styl", "admin-wrappers.styl", "admin-heading.styl" ],

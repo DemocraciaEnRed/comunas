@@ -94,6 +94,7 @@
     "passport-facebook": "2.0.x",
     "passport-local": "~0.1.6",
     "passport-local-mongoose": "~0.2.4",
+    "slug-component": "^1.1.0",
     "strip": "0.0.7",
     "stylus": "0.48.1",
     "t-component": "1.0.0",

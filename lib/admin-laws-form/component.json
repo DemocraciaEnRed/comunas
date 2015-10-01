@@ -9,7 +9,7 @@
     "jadejs/jade": "1.1.5",
     "visionmedia/page.js": "1.3.7",
     "yields/serialize": "0.2.0",
-    "yields/empty": "0.0.1",
+    "yields/slug": "1.1.0",
     "component/closest": "0.1.4",
     "component/confirmation": "0.0.5",
     "slifszyc/query": "0.0.3",
@@ -24,7 +24,8 @@
     "regexps",
     "richtext",
     "toggle",
-    "debug"
+    "debug",
+    "keywords"
   ],
   "templates": [
     "template.jade",

@@ -1,0 +1,15 @@
+{
+  "name": "keywords",
+  "description": "Collection of keywords",
+  "locals": [
+    "citizen",
+    "request",
+    "stateful",
+    "debug"
+  ],
+  "scripts": [
+    "keywords.js",
+    "proto.js"
+  ],
+  "main": "keywords.js"
+}

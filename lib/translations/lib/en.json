@@ -295,6 +295,7 @@
   "signup.browsing": "browsing",
   "signup.check-email": "Please check your email (remember to check your spam folder too) and click on the link supplied on the email.",
   "signup.complete": "Signup complete",
+  "signin.error.incomplete": "Your profile is incomplete.",
   "signup.email": "Email",
   "signup.email-sent": "Email sent",
   "signup.email-validated": "Your email has been validated and now you are logged in",

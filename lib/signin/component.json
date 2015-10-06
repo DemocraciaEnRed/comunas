@@ -13,10 +13,11 @@
     "citizen",
     "form-view",
     "title",
-    "config"
+    "config",
+    "render"
   ],
-  "scripts": [ "signin.js", "view.js" ],
-  "styles": [ "signin.styl" ],
-  "templates": [ "template.jade" ],
+  "scripts": [ "signin.js", "signin-form.js" ],
+  "styles": [ "styles.styl", "signin-form.styl" ],
+  "templates": [ "template.jade", "signin-form.jade" ],
   "main": "signin.js"
 }

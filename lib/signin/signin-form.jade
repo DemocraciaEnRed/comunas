@@ -1,0 +1,12 @@
+.signin-form
+  form.form(action="/signin", method="post", role="form", autovalidate='autovalidate', autosubmit='autosubmit')
+    ul.form-errors
+    .form-group
+      label= t('signup.email')
+      input.form-control(type='text', name='email', placeholder=t('forgot.mail.example'), validate='required email')
+    .form-group
+      label= t('password')
+      .forgot: a(href='/forgot') #{t('forgot.question')}
+
+      input.form-control(type='password', name='password', placeholder=t('password'), validate='required')
+    .form-group: button.btn.btn-block.btn-success.btn-lg=t('signin.login')

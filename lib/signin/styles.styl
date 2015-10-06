@@ -1,0 +1,29 @@
+.signin-page
+  header
+    &.app-header
+      .user-nav
+        a[href="/signin"]
+          display none
+        a[href="/signup"]
+          display inline-block
+
+.signin-container
+  .signin-forms
+    & > div + div
+      &:before
+        content ''
+        display block
+        margin 0 auto
+        width 100px
+        max-width 50%
+        height 1px
+        background-color #ccc
+
+  .signup
+    color #666
+    font-size 12px
+    text-align center
+
+    span
+      margin-right 5px
+      font-weight bold

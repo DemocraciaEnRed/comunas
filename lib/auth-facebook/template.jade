@@ -1,5 +1,7 @@
 .auth-facebook-form
   form(action="/auth/facebook", method="get", role="form")
+    - if (flashMessage)
+      p=flashMessage
     button.btn-facebook(type="submit")
       span.flaticon.social.facebook
       = t('signin.login-with-facebook')

@@ -94,6 +94,9 @@ header.app-header
       &:hover
         text-decoration none
 
+    a[href="/signup"]
+      display none
+
 vendors(prop, args, fn = null)
   val = fn == null ? args : fn + '(' + args + ')'
   -moz-{prop} val

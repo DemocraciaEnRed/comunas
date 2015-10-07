@@ -6,19 +6,18 @@
       h1= t('settings.profile')
     form.form(action="/settings/profile", method="post", role="form", autocomplete="off", autovalidate='autovalidate', autosubmit='autosubmit')
       ul.form-messages
-      .form-group
+      .form-group.profile-first-name
         label #{t('settings.first-name')}
-        input.form-control(type='text', id="firstName", name='firstName', tabindex=1, placeholder=t('settings.first-name'), value='#{citizen.firstName}', validate='required firstname')
-      .form-group
+        input.form-control(type='text', id="firstName", name='firstName', tabindex=1, placeholder=t('settings.first-name'), value=citizen.firstName, validate='required firstname')
+      .form-group.profile-last-name
         label #{t('settings.last-name')}
-        input.form-control(type='text', id="lastName", name='lastName', tabindex=2, placeholder=t('settings.last-name'), value='#{citizen.lastName}', validate='required lastname')
-      .form-group
+        input.form-control(type='text', id="lastName", name='lastName', tabindex=2, placeholder=t('settings.last-name'), value=citizen.lastName, validate='required lastname')
+      .form-group.profile-email
         label= t('signup.email')
-        input.form-control(type='text', disabled='disabled' name='email', tabindex=3, placeholder=t('forgot.mail.example'), value='#{citizen.email}', validate='required email')
-      .form-group
+        input.form-control(type='text', name='email', tabindex=3, placeholder=t('forgot.mail.example'), value=citizen.email, validate='required email')
+      .form-group.profile-locale
         label #{t('settings.locale')}
         select.form-control(id='locale', name='locale', tabindex=4)
-        //- input.form-control(type='text', id="lastName", name='lastName', tabindex=2, placeholder=t('settings.last-name'), value='#{citizen.lastName}', validate='required lastname')
       .form-group.profile-picture
         .image-container
           img(src=citizen.profilePicture(), width="65")

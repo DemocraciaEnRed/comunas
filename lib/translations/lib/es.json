@@ -340,5 +340,6 @@
   "validators.not.match": "No coinciden",
   "validators.password.not.match": "Las contraseñas no coinciden",
   "validators.required": "Requerido",
-  "No topics found": "No hay temas"
+  "No topics found": "No hay temas",
+  "signup.error.facebook.user-already-exists": "Ya existe un usuario registrado con ese email"
 }

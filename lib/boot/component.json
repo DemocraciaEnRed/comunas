@@ -37,10 +37,7 @@
     "images/logo.png"
   ],
   "files": [
-    "assets/Gotham-Book.ttf",
-    "assets/Gotham-Bold.woff",
-    "assets/Gotham-Bold.svg",
-    "assets/Gotham-Bold.eot"
+    "assets/Gotham-Book.*"
   ],
   "main": "boot.js"
 }
